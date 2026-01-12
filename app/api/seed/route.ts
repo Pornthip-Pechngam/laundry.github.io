@@ -1,6 +1,9 @@
 // app/api/seed/route.ts
 import { prisma } from '@/lib/prisma'
 
+export const dynamic = 'force-dynamic'; // เพิ่มบรรทัดนี้ครับ
+
+
 export async function GET() {
   await prisma.order.create({
     data: {
